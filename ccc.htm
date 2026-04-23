@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 800px;
+        font-family: Arial, sans-serif;
+    }
+    td {
+        border: 1px solid #dddddd;
+        text-align: right;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td>1</td><td>11</td><td>21</td><td>31</td><td>41</td><td>51</td><td>61</td><td>71</td><td>81</td><td>91</td>
+  </tr>
+  <tr>
+    <td>2</td><td>12</td><td>22</td><td>32</td><td>42</td><td>52</td><td>62</td><td>72</td><td>82</td><td>92</td>
+  </tr>
+  <tr>
+    <td>3</td><td>13</td><td>23</td><td>33</td><td>43</td><td>53</td><td>63</td><td>73</td><td>83</td><td>93</td>
+  </tr>
+  <tr>
+    <td>4</td><td>14</td><td>24</td><td>34</td><td>44</td><td>54</td><td>64</td><td>74</td><td>84</td><td>94</td>
+  </tr>
+  <tr>
+    <td>5</td><td>15</td><td>25</td><td>35</td><td>45</td><td>55</td><td>65</td><td>75</td><td>85</td><td>95</td>
+  </tr>
+  <tr>
+    <td>6</td><td>16</td><td>26</td><td>36</td><td>46</td><td>56</td><td>66</td><td>76</td><td>86</td><td>96</td>
+  </tr>
+</table>
+</br>
+<table>
+  <!-- Row 1 -->
+  <tr>
+    <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+  </tr>
+  <!-- Row 2 -->
+  <tr>
+    <td>21</td><td colspan="5">22</td>
+  </tr>
+  <!-- Row 3 & 4 (涉及 rowspan) -->
+  <tr>
+    <td>31</td><td rowspan="2">32</td><td colspan="3">33</td><td>36</td>
+  </tr>
+  <tr>
+    <td>41</td><td>43</td><td>44</td><td>45</td><td>46</td>
+  </tr>
+  <!-- Row 5 & 6 -->
+  <tr>
+    <td>51</td><td>52</td><td>53</td><td>54</td><td>55</td><td rowspan="2">56</td>
+  </tr>
+  <tr>
+    <td>61</td><td>62</td><td>63</td><td>64</td><td>65</td>
+  </tr>
+  <!-- Row 7 -->
+  <tr>
+    <td>71</td><td colspan="5">72</td>
+  </tr>
+  <!-- Row 8 & 9 (底部複雜結構) -->
+  <tr>
+    <td>81</td><td>82</td><td rowspan="2">83</td><td rowspan="3">84</td><td rowspan="3">85</td><td>86</td>
+  </tr>
+  <tr>
+    <td>91</td><td>92</td><td>96</td>
+  </tr>
+  <!-- Row 10 -->
+  <tr>
+    <td>101</td><td colspan="2">102</td><td>106</td>
+  </tr>
+</table>
+
+ 
+
+
+
+
+</body>
+</html>
