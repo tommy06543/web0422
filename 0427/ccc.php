@@ -10,7 +10,7 @@
         padding: 8px 12px;
         text-align: center;
         vertical-align: top;
-        font-size: 14px;
+        font-size: 14px; 
     }
     /* 針對交叉表的表頭樣式 */
     .cross-table td:first-child, 
