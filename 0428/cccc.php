@@ -12,11 +12,14 @@ $zone1 = []; // 存放第一區號碼的陣列
 
 while (count($zone1) < 6) {
     $num = rand(1,38);
-    
+    echo $num,", ";
     // 檢查產生的亂數是否已存在陣列中
     if (!in_array($num, $zone1)) {
         $zone1[] = $num; // 不重覆才存入陣列
+    } else{
+         echo $num,", ";
     }
+
 }
 
 // 為了閱讀方便，通常會將號碼排序
