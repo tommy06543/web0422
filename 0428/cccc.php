@@ -17,7 +17,8 @@ while (count($zone1) < 6) {
     if (!in_array($num, $zone1)) {
         $zone1[] = $num; // 不重覆才存入陣列
     } else{
-         echo $num,", ";
+         echo "<br>",$num,", ";
+         print_r($zone1);
     }
 
 }
